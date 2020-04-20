@@ -1,0 +1,48 @@
+EXPRESSION EVALUATOR
+====================
+// Author: Yuvaraja Subramaniam (www.linkedin.com/in/yuvaraja)
+
+// Step 1: Build an expression tree for an expression
+// Step 2: Evaluate the expression
+
+
+1) Compiling / building the binary
+
+	$ ./build.sh
+
+2) Usage 
+	$ ./expreval -h
+       t - run tests
+       d - print debug
+       h - help
+
+3) Running the test cases as well as user entered expression
+	$ ./expreval -t
+
+4) Runnng user entered expression alone
+	$ ./expreval 
+
+
+SAMPLE USAGE
+============
+
+./expreval 
+======================== EVALUATE USER ENTERED EXPRESSION  ========================
+
+Enter mathematical expression to evaluate : (8 * 2) - (2 * 3) + ( 9 / 3 )
+Entered expression                        : (8 * 2) - (2 * 3) + ( 9 / 3 )
+Successful AST tree construction for expression    : (8 * 2) - (2 * 3) + ( 9 / 3 )
+AST TREE : 
+--> --> --> --> 8
+--> --> --> *
+--> --> --> --> 2
+--> --> -
+--> --> --> --> 2
+--> --> --> *
+--> --> --> --> 3
+--> +
+--> --> --> 9
+--> --> /
+--> --> --> 3
+Evaluated expression value               : 13
+
